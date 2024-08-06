@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Local Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+    <h1>User Details Form</h1>
+    <form id="userForm">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" id="department" required></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">Phone Number:</label></td>
+                <td><input type="tel" id="phoneNumber" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+        </table>
+        <button type="button" id="submitBtn" onclick="submitUser()">Submit</button>
+        <button type="button" id="editBtn" onclick="editUser()" style="display: none;">Edit</button>
+        <button type="button" id="deleteBtn" onclick="deleteUser()" style="display: none;">Delete</button>
+        <button type="button" id="displayBtn" onclick="displayUser()" style="display: none;">Display</button>
+    </form>
+</center>
+
+    <table id="userTable" style="display: none;">
+        <thead>
+            <tr >
+                <th>Name</th>
+                <th>Department</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

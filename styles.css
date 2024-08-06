@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+ 
+}
+
+form {
+    width: 350px; /* Adjusted width */
+    padding: 20px; /* Reduced padding */
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2); /* Adjusted shadow for more depth */
+    background-color: #afd1db; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+    
+    font-weight: bold; /* Make labels bold */
+    margin-top: 10px;
+}
+
+
+input {
+
+    margin-bottom: 20px;
+
+}
+
+button {
+  
+    background-color: blue;
+    color: white;
+    padding:10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add space above the table */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
