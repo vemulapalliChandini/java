@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
- 
 }
+
 
 form {
     width: 350px; /* Adjusted width */
@@ -27,17 +27,35 @@ input {
 }
 
 button {
-  
-    background-color: blue;
     color: white;
-    padding:10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
+#submitBtn {
+    background-color: green;
+}
+
+#editBtn {
+    background-color: blue;
+}
+
+#deleteBtn {
+    background-color: red;
+}
+
+#displayBtn {
+    background-color: orange;
+}
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px; /* Add space above the table */
+    margin-top: 20px;
+   /* Light background for better visibility */
 }
 
 th, td {
@@ -46,5 +64,8 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #004080; /* Dark blue background for headers */
+    color: white; /* White text color for contrast */
 }
+
+
